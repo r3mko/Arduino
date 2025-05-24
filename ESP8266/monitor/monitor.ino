@@ -166,11 +166,6 @@ void intPing() {
         status = "[&nbsp;&nbsp;&nbsp;]";
       }
       ping += ip + ": " + status + "<br>";
-
-      if (dhcp_begin == 199) {
-        dhcp_begin = 252;
-        dhcp_end = 254;
-      }
     }
 
     Serial.print(gateway + ": ");

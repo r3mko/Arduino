@@ -328,7 +328,7 @@ void getMessages() {
 };
 
 void readMessages() {
-  int message_pool_size = 13;
+  int message_pool_size = 3;
   const char* message_pool[message_pool_size] = {"Message 1",
                                                   "Message 2",
                                                   "Message 3"

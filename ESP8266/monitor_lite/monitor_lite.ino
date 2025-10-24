@@ -20,12 +20,6 @@ String payload = "";
 String old_payload = "";
 int check = 0;
 
-// Internal ping
-int dhcp_range_begin = 2;
-int dhcp_range_end = 100;
-String gateway = "192.168.1.1";
-String ping = "";
-
 // Pushover
 const char* p_url = "https://api.pushover.net/1/messages.json";
 const char* token = "<TOKEN>";
@@ -177,6 +171,7 @@ void pushover() {
   }
 }
 
+void loop() {
   delay(3000);
 
   // 3(000)s * 1200 = 3600s = 1h
